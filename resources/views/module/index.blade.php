@@ -29,7 +29,7 @@
                     <th>{{$item->hours}}</th>
                     <th>{{$item->fee}}</th>
                     <th>
-                        <a href="{{url('module/update')}}">Update</a> |
+                        <a href="{{url("module/update/{$item->id}")}}">Update</a> |
                         <a href="{{url("module/delete/{$item->id}")}}"
                             onclick="return agree()"
                             >Delete</a>                        

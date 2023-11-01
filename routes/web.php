@@ -22,6 +22,7 @@ Route::get('/', function () {
 
 Route::get('module/', [ModuleController::class,'index'])->name('');
 Route::get('module/create', [ModuleController::class,'create'])->name('');
-Route::get('module/update', [ModuleController::class,'update'])->name('');
+Route::get('module/update/{id}', [ModuleController::class,'update'])->name('');
 Route::post('module/postCreate', [ModuleController::class,'postCreate'])->name('');
 Route::get('module/delete/{id}',[ModuleController::class,'delete'])->name('');
+Route::post('module/postUpdate',[ModuleController::class,'postUpdate'])->name('');
